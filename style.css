@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 5px 5px #ccc;
+}
+
+.weather-header {
+    display: inline-block;
+}
+
+.weather-search {
+    background-color: rgb(43, 39, 39);
+    width: 240px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    & .search-icon {
+        font-size: 1.2rem;
+        color: snow;
+        margin-left: 5px;
+    }
+
+    & .city-name {
+        height: 30px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+
+.weather-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: auto;
+    padding: 20px;
+    margin: 10px 10px;
+    gap: 20px;
+}
+
+.weather-city{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 7px;
+}
+
+.weather-date-time{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.weather-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.weather-forecast{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.weather-temperature{
+    position: absolute;
+    padding-left: 200px;
+    display: inline-block;
+}
+
+.weather-minmax{
+    position: absolute;
+    padding-left: 300px;
+    padding-top: 130px;
+
+    & .weather-min{
+        padding-bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.weather-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.weather-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 4px 8px 7px #ccc;
+    background-color: aliceblue;
+
+    & .fa-solid {
+        font-size: 1.2rem;
+    }
+}
