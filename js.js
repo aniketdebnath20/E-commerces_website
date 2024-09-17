@@ -10,13 +10,11 @@ let w_feelsLike = document.querySelector(".weather-feelslike");
 let w_humidity = document.querySelector(".weather-humidity");
 let w_wind = document.querySelector(".weather-wind");
 let W_pressure = document.querySelector(".weather-pressure");
-
 let citysearch = document.querySelector(".weather-search");
 
 const getCountryName = (code) => {
     return new Intl.DisplayNames([code], { type: "region" }).of(code);
 };
-
 
 const getDateTime = (dt) => {
 
